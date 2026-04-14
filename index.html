@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Takeshi Chang</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2b;
+      --text: #e8edf7;
+      --muted: #a8b3c7;
+      --accent: #7aa2ff;
+      --border: #24314d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    h1, h2 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 2.8rem; }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 40px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .hero { margin-bottom: 36px; }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--panel);
+    }
+
+    .button:hover { border-color: var(--accent); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin-bottom: 14px;
+      font-size: 0.96rem;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .section-note { font-size: 0.95rem; }
+
+    .footer {
+      margin-top: 54px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Takeshi Chang</h1>
+      <p>
+        I’m a Northwestern student interested in quantitative trading, probability,
+        statistics, and applied modeling. This site is a home for my projects,
+        daily training log, and ongoing technical work.
+      </p>
+
+      <div class="links">
+        <a class="button" href="https://github.com/Takeshi-Chang/QT-Training-Camp">GitHub Repo</a>
+        <a class="button" href="./projects/">Projects</a>
+        <a class="button" href="./daily-training-log/">Training Log</a>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section>
+      <h2>Featured Work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>NBA Efficiency Modeling</h3>
+          <p>
+            Predicting true shooting percentage using shot profile, usage, and role-based
+            metrics with linear regression, polynomial features, and Ridge regularization.
+          </p>
+          <a href="./projects/nba-efficiency-model/">View project</a>
+        </div>
+        <div class="card">
+  <h3>Option Pricing App</h3>
+  <p>
+    Interactive options pricing tool built to develop intuition for derivatives,
+    volatility, and model-based valuation.
+  </p>
+  <a href="./projects/option-pricing-app/">View project</a>
+</div>
+      </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section>
+      <h2>Explore</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>Projects</h3>
+          <p>
+            Applied builds and modeling projects focused on extracting signal from data.
+          </p>
+          <a href="./projects/">View projects</a>
+        </div>
+
+        <div class="card">
+          <h3>Daily Training Log</h3>
+          <p>
+            A running log of what I’m learning, building, and improving each day.
+          </p>
+          <a href="./daily-training-log/">View log</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CURRENT FOCUS -->
+    <section>
+      <h2>Currently Working On</h2>
+      <p class="section-note">
+        Building intuition in probability, stochastic processes, and statistical modeling,
+        while applying concepts through projects and consistent daily practice.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      Built and updated by Takeshi Chang.
+    </div>
+
+  </div>
+</body>
+</html>
